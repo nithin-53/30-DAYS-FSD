@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+}
+#lavadae{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+.main11 img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 40px;
+    opacity: .81;
+}
+.main12 select{
+    position: absolute;
+    top: 25px;
+    right: 140px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: .7;
+    cursor: pointer;
+}
+.main12 button{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    background-color: rgb(174, 39, 39);
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 1;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s,ease 0.3s;
+}
+.main12 button:hover{
+    background-color: rgb(97, 23, 23,0.6);
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+    rotate: 5deg;
+}
+
