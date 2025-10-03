@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h5 id="h1">
+                    Rohit
+                </h5>
+            </td>
+            <td>
+                <p id="p1">
+                    0
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5 id="h2">
+                    virat
+                </h5>
+            </td>
+            <td>
+                <p id="p2">
+                    0
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="b1">
+                    rohit
+                </button>
+            </td>
+            <td>
+                <button id="b2">
+                    virat
+                </button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let r=0;
+        let v=0;
+        let r1="Rohit";
+        let v1="virat";
+        document.getElementById("b1").onclick=function(){
+            r = r + 1;
+            document.getElementById("p1").innerHTML =  r;
+            updateScore();
+        }
+        document.getElementById('b2').onclick=function(){
+            v++;
+            document.getElementById('p2').innerHTML = v;
+            updateScore();
+        }
+        function updateScore(){
+            if(v > r){
+                document.getElementById('h1').innerHTML = v1;
+                document.getElementById('p1').innerHTML = v;
+                document.getElementById('h2').innerHTML = r1;
+                document.getElementById('p2').innerHTML = r;
+            }
+            else{
+                document.getElementById('h1').innerHTML = r1;
+                document.getElementById('p1').innerHTML = r;
+                document.getElementById('h2').innerHTML = v1;
+                document.getElementById('p2').innerHTML = v;
+            }
+            
+        }
+    </script>
+</body>
+</html>
