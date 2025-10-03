@@ -9,10 +9,11 @@ body {
     position: relative;
     padding: 0%;
     margin: 0%;
+    border: 0px;
 }
 #lavadae{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     opacity: 0.5;
     filter: brightness(0.6);
 }
@@ -26,6 +27,13 @@ body {
     opacity: .81;
     filter: brightness(.5);
 }
+.main12{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 10px;
+    right: 10px;
+}
 .main12 select{
     position: absolute;
     top: 25px;
@@ -34,13 +42,17 @@ body {
     color: white;
     border: 1px solid white;
     border-radius: 6px;
-    height: 30px;
-    width: 110px;
+    height: 35px;
+    width: 130px;
     text-align: center;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: .7;
     cursor: pointer;
+    padding: .5px;
+    margin: 0%;
+    align-items: center;
+
 }
 .main12 button{
     position: absolute;
@@ -143,18 +155,20 @@ body {
     padding: 0%;
     margin: 0%;
     top: 0px;
+    border: 1px solid rgb(0, 0, 0);
 }
 .main2 h4{
     position: absolute;
     top: -10px;
-    left: 30px;
-    font-size: xx-large;
-    color: blanchedalmond;
+    left: 70px;
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 #img1{
     position: absolute;
-    top: 100px;
+    top: 70px;
     background-color: aliceblue;
     height: 250px;
     width: 200px;
@@ -167,7 +181,7 @@ body {
 
 #img2{
     position: absolute;
-    top: 100px;
+    top: 70px;
     background-color: aliceblue;
     height: 250px;
     width: 200px;
@@ -180,7 +194,7 @@ body {
 
 #img3{
     position: absolute;
-    top: 100px;
+    top: 70px;
     background-color: aliceblue;
     height: 250px;
     width: 200px;
@@ -192,7 +206,7 @@ body {
 }
 #img4{
     position: absolute;
-    top: 100px;
+    top: 70px;
     background-color: aliceblue;
     height: 250px;
     width: 200px;
@@ -205,7 +219,7 @@ body {
 
 #img5{
     position: absolute;
-    top: 100px;
+    top: 70px;
     background-color: aliceblue;
     height: 250px;
     width: 200px;
@@ -218,7 +232,7 @@ body {
 
 #img6{
     position: absolute;
-    top: 100px;
+    top: 70px;
     background-color: aliceblue;
     height: 250px;
     width: 200px;
@@ -232,17 +246,99 @@ body {
     position: absolute;
     top: 40px;
     left: 30px;
-    height: 400px;
+    height: 350px;
     width: 95%;
     transition: scale 0.3s,ease 0.3s,cursor pointer,border-radius 10px,border 1px solid grey;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    top: 10px;
+    top: 2px;
+    border: 0px;
 }
 #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     border: 2px solid grey;
+}
+.main23{
+    top: 320px;
+    position: absolute;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    left: 70px;
+    font-size: 3vh;
+}
+.main24{
+    position: absolute;
+    top: 400px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    left: 70px;
+    font-size: 3vh;
+    background-color: rgb(27, 44, 96);
+    height: 300px;
+    width: 20%;
+    align-items: center;
+    border-radius: 10px;
+    flex: content;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.main25{
+    position: absolute;
+    top: 400px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    left: 430px;
+    font-size: 3vh;
+    background-color: rgb(27, 44, 96);
+    height: 300px;
+    width: 20%;
+    align-items: center;
+    border-radius: 10px;
+    flex: content;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.main26{
+    position: absolute;
+    top: 400px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    left: 780px;
+    font-size: 3vh;
+    background-color: rgb(27, 44, 96);
+    height: 300px;
+    width: 20%;
+    align-items: center;
+    border-radius: 10px;
+    flex: content;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.main27{
+    position: absolute;
+    top: 400px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    left: 1130px;
+    font-size: 3vh;
+    background-color: rgb(27, 44, 96);
+    height: 300px;
+    width: 20%;
+    align-items: center;
+    border-radius: 10px;
+    flex: content;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.kuthu{
+    color: grey;
+
 }
