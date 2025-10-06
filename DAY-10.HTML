@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 25vh;
+            width: 9vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Enter Name" id="ip1">
+        <input type="text" placeholder="Enter img src" id="ip2">
+        <input type="text" placeholder="Enter Bio" id="ip3"> 
+        <button onclick=update()><b>Submit</b></button>
+
+    </div>
+    <div>
+        <h1 id="h1">
+            Name
+        </h1>
+        <img src="img3.jpg" alt="" id="src">
+        <h1 id="bio">
+            Bio
+        </h1>
+    </div>
+</body>
+<script>
+    function update(){
+       let name = document.getElementById('ip1').value;
+       let imge = document.getElementById('ip2').value;
+       let Bio = document.getElementById('ip3').value;
+       document.getElementById('h1').innerHTML=name;
+       document.getElementById('src').src=imge;
+       document.getElementById('bio').innerHTML=Bio;
+    }
+
+</script>
+</html>
