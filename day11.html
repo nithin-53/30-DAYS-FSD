@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return formSubmit()">
+        <label for="na">Name</label>
+        <br>
+        <input type="text" id="na" placeholder="Enter name">
+        <br>
+        <span id="sp1"></span>
+        <br>
+        <label for="nu">Number</label>
+        <br>
+        <input type="number" id="nu" placeholder="Enter number">
+        <br>
+        <span id="sp2"></span>
+        <br>
+        <label for="mail">Email</label>
+        <br>
+        <input type="email" id="mail" placeholder="Enter mail id">
+        <br>
+        <span id="sp3"></span>
+        <br>
+        <br>
+        <input type="submit" >
+    </form>
+</body>
+<script>
+    function formSubmit(){
+        let Name = document.getElementById('na').value;
+        let Number = document.getElementById('nu').value;
+        let Mail = document.getElementById("mail").value;
+        if(Name == ""){
+            document.getElementById("sp1").innerHTML="Kindly , Enter your name !"
+            return false;
+        }
+        else{
+            document.getElementById('sp1').innerHTML="";
+        }
+        if( Number == ""){
+            document.getElementById('sp2').innerHTML="Kindly , Enter your number !"
+            return false;
+        }
+        else if( Number == isNaN){
+            document.getElementById('sp2').innerHTML="Kindly , Enter numbers only !"
+            return false;
+        }
+        else{
+            document.getElementById('sp2').innerHTML="";
+        }
+        if(Mail == ""){
+            document.getElementById('sp3').innerHTML="Kindly , Enter your mail id !"
+            return false;
+        }
+        else{
+            document.getElementById('sp3').innerHTML="";
+        }
+        alert("Form submitted")
+        return true;
+        }
+</script>
+</html>
