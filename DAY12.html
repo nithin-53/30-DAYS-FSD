@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domManipulation</title>
+</head>
+
+<body>
+    <form onsubmit="setValue()">
+        <input type="text" placeholder="Enter Name" id="na">
+        <input type="number" placeholder=" Enter Number" id="nu">
+        <input type="email" placeholder="Enter Email id" id="em">
+        <input type="submit" value="Login">
+    </form>
+    <form action="" onsubmit="getValue()">
+        <input type="search" id="search">
+        <input type="submit" value="submit">
+    </form>
+    <span id="data"></span>
+    <script>
+        function setValue(){
+            let userName = document.getElementById('na').value;
+            let userNumber = document.getElementById('nu').value;
+            let userEmail = document.getElementById("em").value;
+
+            localStorage.setItem('user Name' , userName);
+            localStorage.setItem("user Number" , userNumber);
+            localStorage.setItem('user Email' , userEmail);
+            console.log("succes")
+
+            alert("Submitted");
+            return true;
+        }
+        function getValue(){
+            let search = document.getElementById('search').value;
+            let data = localStorage.getItem(search);
+            document.getElementById("data").innerHTML=data;    
+            
+            alert("value have been got !")
+            return true;
+        }
+    </script>
+</body>
+</html>
+
