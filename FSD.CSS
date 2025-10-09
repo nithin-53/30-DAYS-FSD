@@ -430,4 +430,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.form{
+    position: absolute;
+    display: none;
+}

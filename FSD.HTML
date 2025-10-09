@@ -24,7 +24,7 @@
                         </select>
                     </td>
                     <td>
-                        <button onclick="getSignin()">sign in</button id="sign">
+                        <button onclick="getSignin()">sign in</button id="sign" >
                     </td>
                 </tr>
             </table>
@@ -155,9 +155,14 @@
             <table>
                 <td>
                     <tr>
-                        <form action="" id="fr">
+                        <form action="" id="fr" onsubmit="Signin()">
+                            <label for="email">Email</label>
                             <input type="email" id="eMail" placeholder="Enter Your Name">
+                            <br><span id="span1"></span><br>
+                            <label for="password">PassWord</label>
                             <input type="password" id="passWord" placeholder="Enter Your Password">
+                            <br><span id="span2"></span><br>
+                            <input type="submit" value="Login">
                         </form>
                     </tr>
                 </td>
@@ -166,10 +171,29 @@
     </div>
 </body>
 <script>
-    function getSignin() {
+    function Signin() {
        let mail = document.getElementById('eMail').value;
        let pass = document.getElementById('passWord').value;
-       
+
+       if(mail == ""){
+        document.getElementById("span1").innerHTML="Kindly,Enter your Email !"
+        return false;
+       }
+       else{
+        document.getElementById("span1").innerHTML="";
+       }
+       if(pass == ""){
+        document.getElementById("span2").innerHTML="Kindly , Enter your Password !"
+        return false;
+       }
+       else{
+        document.getElementById("span2").innerHTML="";
+       }
+       alert("login successful")
+       return true;
+    }
+    function getSignin(){
+        
     }
 </script>
 
