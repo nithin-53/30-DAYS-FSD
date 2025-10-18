@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <style>
+        .formm form{
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            padding: 10px;
+        }
+        input{
+            width: 400px;
+            padding: 10px;
+        }
+        button{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formm">
+        <form action="">
+            <h1>
+                Login Form
+            </h1>
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter Your Name">
+            <label for="">Number</label>
+            <input type="text" placeholder="Enter your Number">
+            <label for="">Email</label>
+            <input type="text" placeholder="Enter Your Mail">
+            <button><b>submit</b></button>
+        </form>
+    </div>
+    <div id="Translator">
+        
+    </div>
+    <script src="https:translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            function googleTranslateElementInit(){
+                new google.translate.TranslateElement({pagelanguage :'en'},'Translator');
+            }
+        </script>
+    
+</body>
+</html>
