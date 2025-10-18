@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class IdCard{
+        constructor(Name,Age,DOB){
+            this.name=Name;
+            this.age=Age;
+            this.dob=DOB;
+        }
+        printing(){
+            document.write(`Name is ${this.name},Age is ${this.age} and DOB is ${this.dob}`);
+        }
+    }
+    let NithinId = new IdCard (" Nithin R" , 25 , "15-05-2006");
+    let devilId = new IdCard (" devil" , 25 , "15-07-2003");
+    let kaviyaId = new IdCard (" kaviya" , 25 , "19-09-2005");
+    NithinId.printing();
+    devilId.printing();
+    kaviyaId.printing();
+</script>
+</html>
